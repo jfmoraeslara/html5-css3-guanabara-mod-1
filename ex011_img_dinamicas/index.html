@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagnes dinâmicas</h1>
+    <p>Possibilita abrir a imagem em vários dispositivos diferentes e diminuindo o tamanho de seu navegador.</p>
+
+    <picture>
+        <!--carregar um valor acima do tamanho da imagem-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzir Áudio.</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <p>Formas mais simples de reproduzir áudio não menos recomendado:</p>
+    <audio src="midia/Boom Bap Flick - Quincas Moreira.mp3" controls></audio>
+    <p>Forma mais recomendada para reproduzir um áudio com vários tipos de mídias.</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/Boom Bap Flick - Quincas Moreira.mp3" type="audio/mpeg">
+        <source src="midia/Boom Bap Flick - Quincas Moreira.mp3" type="audio/ogg">
+        <source src="midia/Boom Bap Flick - Quincas Moreira.mp3" type="audio/wav">
+    </audio>
+
+</body>
+</html>
